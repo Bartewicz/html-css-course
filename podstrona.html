@@ -1,0 +1,271 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+
+	<title>Podstrona testowa nr 1 - Junior Front-End Developera</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="reply-to" content="bartoszwojtalewicz@pro.wp.pl" />
+	<meta http-equiv="content-language" content="pl" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="title" content="Język programisty - wszystko o programowaniu stron internetowych." />
+	<meta name="description" content="Samodzielny kurs Junior Front-End Developera" />
+	<meta name="keywords" content="Programowanie stron internetowych, html, css" />
+	
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Kanit:800,900&amp;subset=latin-ext" rel="stylesheet">
+	
+</head>
+	
+<body>
+
+	<div id="container">
+	
+		<div id="logo">
+		
+			<a href="index.html" name="odnośnik"><img id="logoxxl" alt="Better World logo" src="img/BetterWorld.svg" title="Better World" width="100%" /></a>
+			
+		</div>	
+		
+		<div id="menu">
+			
+			<div class="option1"><a href="index.html">Strona główna</a></div>
+				
+			<div class="option"><a href="podstrona.html">Podstrona</a></div>
+				
+			<div class="option">Formularze</div>
+				
+			<div class="option"><a href="css.html">CSS</a></div>
+				
+			<div class="option">Archiwum</div>
+
+			<div class="option">O mnie</div>
+				
+			<div class="option0">Kontakt</div>
+			
+			<div style="clear: both;"></div>
+			
+		</div>
+		
+		<div id="content">
+		
+			<div id="blog">
+			
+				<div id="header">
+				
+					<div id="headerL">
+					
+						<img id="logoxs" src="img/BWwatermark.png" title="Better World" />
+				
+					</div>
+					
+					<div id="headerR">
+						
+						<h1>Witaj na pierwszej podstronie!</h1>
+					
+					</div>
+					
+					<div style="clear: both;"></div>
+		
+				</div>
+					
+				<div id="article">
+				
+					<p>
+						W tym miejscu przedstawię sam sobie rodzaje znaczników tworzących formularze w języku HTML. Zwieńczeniem tego artykułu będzie kolejna podstrona, w której zastosowane zostaną wszelkie dostępne w języku HTML rodzaje formularzy. Gdy już zapoznamy się z tymi dostępnymi w języku HTML, poznamy również alternatywną metodę. Spróbujemy mianowicie stworzyć formularz za pomocą arkusza styli CSS.
+					</p>
+					
+					<p>
+						Jednak zanim zaczniemy, wrócimy jeszcze na chwilę do poprzedniego tematu...
+					</p>
+						
+					<h2>Obrazek z opływającym go tekstem:</h2>
+				
+					<table cellspacing="8">
+						<tr>
+							<td valign="top">
+							<div align="right">
+								<b>Bitwa na Morzu Filipińskim</b> – bitwa powietrzno-morska podczas II&nbsp;wojny światowej między flotą amerykańską a&nbsp;japońską, stoczona w&nbsp;dniach 19-20&nbsp;czerwca 1944 w&nbsp;północnej części Morza Filipińskiego, na&nbsp;zachód od&nbsp;archipelagu Marianów.
+							</div>
+							</td>
+				
+							<td rowspan="2" width="308" valign="top">
+								<img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Fighter_plane_contrails_in_the_sky.jpg" height="250" align="right" />
+							</td>
+						</tr>
+					
+						<tr>
+							<td valign="bottom">
+							<div align="right">
+								<span>Na zdjęciu smugi kondensacyjne samolotów walczących nad amerykańskim zespołem, 19 czerwca 1944&nbsp;</span>
+							</div>
+							</td>
+						</tr>
+					</table>
+			
+					<br clear="right" />
+			
+					<h2>Formularz - każdy formularz określają znaczniki <span>&lt;form&gt;</span> i <span>&lt;/form&gt;</span>:</h2>
+					
+					<h3>Atrybuty znacznika <span>&lt;form&gt;</span>:</h3>
+				
+					<ol>
+						<li><span><i>action="mailto:adres email"</i></span> - ustala adres email, na który zostanie wysłany formularz; można również podać adres skryptu PHP lub CGI, który będzie wywoływany po wypełnieniu formularza, wówczas dane z formularza zostaną przekazane do odpowiedniego skryptu;
+
+						<p>
+							Można dodać PARAMETR <span><i>?subject=temat</i></span>, np.:
+						</p>
+
+						<p>
+							<span><i>action="mailto:adresemail@poczta.com?subject=Zgłoszenie"),</i></span>
+						</p>
+
+						<p>
+							który doda automatycznie tytuł do wysyłanego maila;
+						</p>
+				
+						<li><span><i>method="post"</i></span> - <span><i>post</i></span> lub <span><i>get</i></span> określa metodę przekazania informacji do wskazanego skryptu
+						<br />
+				
+						<li><span><i>enctype=" "</i></span> - sposób kodowania przesyłanych danych; tylko dla metody <span><i>post</i></span>; przy przesyłaniu pliku na serwer ustawiamy dzielenie poprzez wartość atrybutu <span><i>multipart="form-data</i></span>;
+				
+					</ol>
+			
+					<h4>Pole INPUT</h4>
+				
+					Dla formularza typu newsletter o pożądanej akcji:
+			
+					<br /><br />
+			
+					<span><i>&lt;form action="mailto:bartek0402@gmail.com?subject=Newsletter" method="post"&gt;</i></span>
+			
+					<br /><br />
+			
+					Utworzono następujący wygląd formularza:
+			
+					<br /><br />
+			
+					Podaj swój adres email:
+
+					<label>
+						<input name="adres" value=""/>
+					</label>
+
+					<input type="submit" value="Ślij" />
+					
+					<br />
+				
+					<h4>Atrybuty znacznika <span>&lt;input&gt;</span>:</h4>
+
+					<ol>
+						<li><span><i>name</i></span> - określa nazwę danego pola w formularzu; każde pole musi mieć unikalną nazwę;
+							
+						<li><span><i>value</i></span> - określa domyślną wartość danego pola;
+					
+						<li><span><i>size</i></span> - określa liczbę widocznych znaków w danym polu;
+					
+						<li><span><i>maxlenght</i></span> - określa max liczbę znaków mieszczących się w danym polu;
+							
+						<li><span><i>type</i></span> - określa typ pola:
+
+						<ul>
+
+							<li><span><i>type="text"</i></span> - pole tekstowe;
+
+							<label>
+								<input type="text" name="tekst" value="" size="15" title="Pole tekstowe">
+							</label>
+
+							<li><span><i>type="checkbox"</i></span> - pole wyboru poj. opcji
+
+							<label>
+								<input type="checkbox" name="zaznacz" title="Czy zgodzisz się, że to pole wyboru? Jeżeli tak, to zaznacz. Jeżeli nie, pozostaw to pole puste."/>
+							</label>
+
+							<li><span><i>type="radio"</i></span> - bardzo fajna opcja dająca możliwość wyboru jednej opcji z grupy:
+
+							<br /><br />
+
+								<label>
+									<input type="radio" value="Faktycznie, to świetna opcja!" name="grupa_radio" title="Fantastycznie!" />Faktycznie, to świetna opcja!
+								</label>
+
+								<br />
+
+								<label>
+									<input type="radio" value="No spoko" name="grupa_radio" title="Może być" />No spoko.
+								</label>
+
+								<br />
+
+								<label>
+									<input type="radio" value="Mnie nie zachwyca" name="grupa_radio"  title="Bez zachwytu"/>Mnie nie zachwyca...
+								</label>
+
+								<br />
+
+							<li><span><i>type="password"</i></span> - wprowadzanie hasła - zasłania wprowadzane dane:
+								<label>
+									<input type="password" name="hasło" size="8"/>
+								</label>
+
+							<li><span><i>type="file"</i></span> - ładowanie pliku <input type="file" name="plik" size="25" />
+					
+							<li><span><i>type="reset"</i></span> - przycisk, który kasuje wszystkie wprowadzone w formularzu dane;
+					
+							<li><span><i>type="hidden"</i></span> - pozwala wprowadzić do formularza dane niewidoczne z poziomu użytkownika;
+					
+						</ul>
+					</ol>
+
+					<h3>W formularzach można również wykorzystywać przyciski za pomocą polecenia <i>&lt;button&gt;</i>. Od znacznika <i>input</i> różni się tym, że w przyciskach typu <i>button</i> można 	konfigurować styl tekstu lub używać w nich grafiki.</h3>
+			
+					Wyróżniamy przyciski:
+			
+					<ol>
+				
+						<li><span><i>&lt;button type="submit" name="przycisk1"&gt;Wyślij&lt;/button&gt;</i></span> - służy do wysyłania danych z formularza;
+				
+						<li><span><i>&lt;button type="reset" name="przycisk2"&gt;Wyczyść&lt;/button&gt;</i></span> - służy do wyczyszczenia wszystkich danych w formularzu;
+				
+						<li><span><i>&lt;button type="button" name="przycisk3"&gt;Np. powrót&lt;/button&gt;</i></span> - przycisk dowolnego przeznaczenia;
+					
+					</ol>
+				
+					<h4>
+						<b>Znacznik <span><i>&lt;button&gt;</i></span> może mieć również atrybut <span><i>style</i></span>, który daje możliwość zmiany wyglądu tekstu na przycisku. Przykład poniżej.</b>
+					</h4>
+					
+					<form action="formularz.html">
+					
+						<div align="center">
+							<button type="submit" name="przycisk1"><b>Przejdź do strony z WIELKIM FORMULARZEM</b></button>
+						</div>
+			
+					</form>
+						
+				</div>
+				
+			</div>
+				
+			<div id="panel">
+			
+				<a href="img/reklama.png"><img  src="img/reklama.png" title="Jeszcze zdążysz kupić prezent!" width="170" /></a>
+				
+			</div>
+			
+			<div style="clear: both;"></div>
+		
+		</div>
+		
+		<div id="footer">
+		
+			Strona testowa &copy; Wszelkie prawa zastrzeżone.
+		
+		</div>
+		
+	</div>
+	
+</body>
+	
+</html>

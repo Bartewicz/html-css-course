@@ -1,0 +1,217 @@
+body {
+	background-color: #606060;
+}
+
+/* Szablon strony */
+
+#container {
+	margin-left: auto;
+	margin-right: auto;
+	width: 1000px;
+}
+
+#logo {
+	display: table;
+	margin-top: 15px;
+	width: 1000px;
+}
+
+#menu {
+	color: white;
+	background-color: black;
+	border-top-left-radius: 25px;
+	border-bottom-left-radius: 25px;
+	margin-top: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 1000px;
+}
+	
+#content {
+	display: table;
+	margin-top: 15px;
+	width: 1000px;
+}
+
+#blog {
+	display: table-cell;
+	border-collapse: separate;
+	vertical-align: top;
+}
+
+#header {
+	background-color: red;
+	border-top-left-radius: 33px;
+	border-bottom-left-radius: 33px;
+	color: white;
+	height: 66px;
+	width: 815px;
+}
+
+#headerL {
+	border-right: 2px dotted white;
+	float: left;
+	margin-top: 13px;
+	margin-left: 15px;
+	width: 52px;
+	
+}
+
+#headerR {
+	float: left;
+	font-size: 22px;
+	margin-left: 15px;
+}
+
+#article {
+	color: white;
+	padding: 10px;
+	width: 800px;
+}
+
+#panel {
+	width: 170px;
+}
+
+#panel:hover {
+	opacity: 0.2;
+}
+
+#footer {
+	background-color: white;
+	margin-top: 10px;
+	padding: 15px;
+	text-align: center;
+	width: 970px;
+}
+
+/* Klasy */
+
+.option1, .option, .option0 {
+	float: left;
+	font-size: 19px;
+	font-weight: 700;
+	height: 25px;
+	min-width: 50px;
+	padding-left: 10px;
+	padding-right: 10px;
+	position: center;
+	text-align: center;
+}
+
+.option1, .option {	
+	border-right: 2px solid #FF0000;
+}
+
+.option1 {
+	margin-left: 8px;
+}
+
+.option1:hover, .option:hover, .option0:hover {
+	cursor: pointer;
+	background-color: red;
+}
+
+/* Style linków ff3399*/
+
+a:link {
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:visited {
+	color: white;
+}
+
+a:hover {
+	color: white;
+}
+
+/* Style nagłówków i akapitów */
+
+#logoRtxt {
+	color: white;
+	font-family: 'Kanit', sans-serif;
+	font-size: 190px;
+	font-weight: 900;
+	letter-spacing: 8px;
+	line-height: 164px;
+}
+
+h1 {
+	margin-top: 4px;
+}
+
+h2 {
+	color: aqua;
+	font-size: 20px;
+}
+
+h3 {
+	color: white;
+}
+
+h4 {
+	color: aqua;
+	text-align: center;
+}
+
+p {
+	text-align: justify;
+}
+
+span {
+	color: aqua;
+	font-style: italic;
+}
+
+span.strike {
+	text-decoration-line: line-through;
+}
+
+/* Style list */
+
+ol {
+	list-style-position: inside;
+	margin-left: -32px;
+}
+
+ul li {
+	margin-left: -30px;
+}
+
+
+/* Style obramowanych pól tekstowych */
+
+fieldset {
+	background-color: #808080;
+	border: 2px solid;
+    border-radius: 20px;	
+	box-shadow: 4px 4px 6px white;
+	font-family: "Bookman Old Style", "Cambria", "Arial", "Verdana", "Geneva", sans-serif;
+	max-width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 8px;
+	-moz-box-shadow: 4px 4px 10px white;
+	-webkit-box-shadow: 4px 4px 10px white;
+}
+
+/* Style obrazów na stronie */
+
+#logoxxl:hover, #logoxs:hover {
+	opacity: 1.0 !important;
+}
+
+img:hover {
+	opacity: 0.8;
+}
+
+/* Przyciski */
+
+button {
+	font-family: 'Arial', sans-serif;
+	font-size: 12pt;
+	background-color: red;
+}

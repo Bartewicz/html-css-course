@@ -1,0 +1,241 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+
+	<title>Strona testowa Junior Front-End Developera</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="reply-to" content="bartoszwojtalewicz@pro.wp.pl" />
+	<meta http-equiv="content-language" content="pl" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="title" content="Język programisty - wszystko o programowaniu stron internetowych." />
+	<meta name="description" content="Samodzielny kurs Junior Front-End Developera" />
+	<meta name="keywords" content="Programowanie stron internetowych, html, css" />
+	
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Kanit:800,900&amp;subset=latin-ext" rel="stylesheet">
+	
+</head>
+	
+<body>
+		
+	<div id="container">
+	
+		<div id="logo">
+		
+			<a href="index.html" name="odnośnik"><img id="logoxxl" alt="Better World logo" src="img/BetterWorld.svg" title="Better World" width="100%" /></a>
+			
+		</div>		
+	
+		<div id="menu">
+			
+			<div class="option1"><a href="index.html">Strona główna</a></div>
+
+			<div class="option"><a href="podstrona.html">Podstrona</a></div>
+
+			<div class="option">Formularze</div>
+				
+			<div class="option"><a href="css.html">CSS</a></div>
+				
+			<div class="option">Archiwum</div>
+
+			<div class="option">O mnie</div>
+				
+			<div class="option0">Kontakt</div>
+			
+			<div style="clear: both;"></div>
+			
+		</div>
+	
+		<div id="content">
+			
+			<div id="blog">
+			
+				<div id="header">
+				
+					<div id="headerL">
+					
+						<img id="logoxs" src="img/BWwatermark.png" title="Better World" />
+				
+					</div>
+					
+					<div id="headerR">
+				
+						<h1>CSS, czyli Coś Się Szykuje...</h1>
+					
+					</div>
+					
+					<div style="clear: both;"></div>
+		
+				</div>
+				
+				<div id="article">
+				
+					<p>
+						W momencie wprowadzenia standardu HTML5 wprowadzono gruntowne zmiany w strukturze kodu tekstowego, tworzącego całość stron internetowych wyświetlanych przez przeglądarki. Przede wszystkim doszło do znaczącego rozdziału zawartości strony od jej wyglądu. Wprowadzono nowy standard. Tym standardem jest właśnie wspomniany CSS. Od tej pory za pomocą języka HTML wprowadzane będą przez nas te najważniejsze informacje opisujące zawartość strony oraz jej treść - odpowiednio w sekcjach <span><i>head</i></span> oraz <span><i>body</i></span>. Jej wygląd natomiast w głównej mierze będzie opierał się już na standardzie CSS.
+					</p>
+
+					<p>
+						Odpowiedzmy sobie jednak najpierw na jedno, zajebardzo ważne pytanie: czym właściwie jest ten CSS?
+					</p>
+
+					<h2>CSS, czyli Kaskadowe Arkusze Stylów</h2>
+
+					<p>
+						Tak jest. CSS to nic innego jak akronim z języka angielskiego. Nasze już swojsko, choć jeszcze być może dla niektórych tajemniczo brzmiące <span><i>"Kaskadowe Arkusze Stylów"</i></span>, to w oryginale, <i><a href="https://www.youtube.com/channel/UCIj6yjWVKPKO5zNLBjQ8Beg" style="font-weight: bold;" title="Może poćwiczymy angielski? ;)">po cudzemu</a> <span>"Cascading Style Sheets"</span></i>. Pliki utworzone za pomocą tego stantardu zapisujemy z&nbsp;rozszerzeniem <span><i>.css</i></span>, a&nbsp;najczęściej, w&nbsp;przypadku prostych stron inernetowych, jest to domyślnie plik <span><i>style.css</i></span>.
+					</p>
+
+					<h2>No dobrze, ale skąd nazwa?</h2>
+
+					<p>
+						Otóż już tłumaczę. Nazwa tego standardu wzięła się od analogii, wynika z kaskadowej, a więc powiedzielibyśmy warstwowej lub schierarchizowanej zależności zakodowanych przez nas stylów dot. poszczególnych elementów na stronie. Dla charakterystycznych elementów tworzących treść naszej strony możemy zastosować jednolite style dla całej naszej witryny z pomocą jednego pliku. Układ tzw. kaskadowy pozwala nam natomiast zmienić atrybut opisujący nam dany element, np. dla konkretnej podstrony, nie ingerując w plik wyjściowy opisujący styl akapitów dla całej witryny. Ponadto, na tej samej podstronie możemy również zmienić styl dla jednego, interesującego nas akapitu, zachowując styl pozostałych akapitów występujących na tej samej podstronie.
+					</p>
+
+					<p>
+						Oznacza to więc, że wygląd danego elementu strony będzie się różnił w zależności od metody wprowadzenia opisu definiującego jego styl w&nbsp;kodzie HTML. Rzecz jasna, za pomocą języka CSS.
+					</p>
+
+					<h2>Jak to się ma do kaskady?</h2>
+
+					<p>
+						Ano, jeżeli weźmiemy pod lupę naturalne układy kaskadowe, jak wodospad czy taras, to cechą charakterystyczną jest specyficzna budowa tychże układów. Otóż każdy kolejny poziom wodospadu lub tarasu znajduje się poniżej poprzedniego i jest względem niego wysunięty.
+					</p>
+
+					<p>
+						By to sobie odpowiednio zobrazować przyjmijmy, że jesteśmy dryfującą wzdłuż rzeki papierową żaglówką opisującą wspomniany wyżej kolor akapitów na naszej stronie internetowej. Zakładamy również, że cecha ta jest opisana różnymi atrybutami kolejno dla całej witryny w pliku CSS, następnie w sekcji <span><i>head</i></span> dla danej podstrony oraz za pomocą atrybutu <span><i>style</i></span> dla konkretnego akapitu. Gdybyśmy byli przeglądarką internetową to informację nt. temat w pierwszej kolejności odczytalibyśmy z przywołanego w sekcji <span><i>head</i></span> pliku CSS dla całej witryny. Zatem znajdujemy się teraz na najwyższym poziomie kaskady, który określa kolor akapitów w zewnętrznym pliku i jest on spójny dla całej witryny. Przemieszczając się dalej wzdłuż rzeki spadamy na pierwszym wodospadzie i lądujemy na interesującej nas podstronie. Zgodnie z hierarchią, jeżeli jej styl jest odmienny od reszty witryny, to dla strony głównej czy pozostałych podstron nie ma znaczenia. Ponieważ jednak w chwili obecnej znajdujemy się na tej konkretnej podstronie, to interesuje nas styl opisujący właśnie tę podstronę. Stąd wartość opisująca kolor akapitu dla tej podstrony, który również umieścimy w sekcji <span><i>head</i></span>, będzie miała dla nas wyższy priorytet, aniżeli ten wynikający z pliku zewnętrznego.
+					</p>
+
+					<p>
+						Poruszając się po kojenych akapitach wewnątrz tej samej podstrony lądujemy nagle na jednym z akapitów, który naszym zdaniem zasługuje na dodatkowe wyróżnienie. By tego dokonać przesuniemy się poziom niżej w naszym układzie kaskadowym. Już nie definiującym styl podstrony, a do konkretnego akapitu. To tu, w&nbsp;sekcji <span><i>body</i></span> w znaczniku <span><i>&lt;p&gt;</i></span> zdefinijemy styl o wyższym priorytecie, ale obowiązyjący wyłącznie dla tego, wyjątkowego naszym zdaniem fragmentu artykułu.
+					<p>
+
+					<p>
+						Analogicznie, gdy odpowiednim znacznikiem zakończymy definicję, w tym wypadku, koloru akapitów dla danego poziomu, nasza przeglądarka internetowa będzie szukać informacji o poziom wyżej, jak ma interpretować styl dla kolejnych elementów. Zatem następny akapit po wyróżnionym przez nas będzie miał kolor zdefiniowany dla całej podstrony.
+					</p>
+
+					<p>
+						Mam nadzieję, że tym (może trochę chaotycznym, ale) dość barwnym opisem, udało mi się wyjaśnić w kilku akapitach zasadę działania hierarchii stylów oraz analogię do naturalnych układów kaskadowych. W następnej częsci tego artykułu zajmiemy się więc sposobem ich wprowadzania do języka HTML.
+					</p>
+
+					<h2>Sposoby definiowania kolejnych poziomów</h2>
+
+					<h3>Odwołanie do pliku zewnętrznego <i>style.css</i>:</h3>
+
+					<fieldset>
+
+						<p style="text-indent: 1em;">
+							<i>&lt;head&gt;</i>
+						</p>
+
+						<p style="text-indent: 2em;">
+							<i>&lt;link rel="stylesheet" href="style.css" type="text/css" /&gt;</i>
+						</p>
+
+						<p style="text-indent: 1em;">
+							<i>&lt;/head&gt;</i>
+						</p>
+
+					</fieldset>
+
+					<p>
+					W ten sposób informujemy przeglądarkę, że odwołujemy się do arkusza styli znajdującego się w&nbsp;odrębnym pliku, wskazujemy ścieżkę dostępu do niego oraz podajemy informację co stanowi jego zawartość, a więc tekst w&nbsp;języku CSS. Odwołanie do pliku z&nbsp;ogólnym arkuszem styli umieszczamy w sekcji <span><i>&lt;head&gt;</i></span>, tak samo jak i&nbsp;pozostałe ważne informacje dotyczące strony, nie stanowiące jej zasadniczej treści. Podobnie będzie z&nbsp;drugą metodą opisaną poniżej, którą zastosujemy np. dla jednej interesującej nas podstrony.
+					</p>
+
+					<h3>Definicja stylu dla konkretnej podstrony za pomocą znacznika <i>"style"</i>:</h3>
+
+					<fieldset><i>
+
+						<p style="text-indent: 1em;">
+							&lt;head&gt;
+						</p>
+
+						<p style="text-indent: 2em;">
+							&lt;style&gt;
+						</p>
+
+						<p style="text-indent: 2em;">
+							{
+						</p>
+
+						<p style="text-indent: 3em;">
+							atrybut: wartość;
+						</p>
+
+						<p style="text-indent: 2em;">
+							}
+						</p>
+
+						<p style="text-indent: 2em;">
+							&lt;/style&gt;
+						</p>
+
+						<p style="text-indent: 1em;">
+							&lt;/head&gt;
+						</p>
+
+					</i></fieldset>
+
+					<h3>Definicja stylu dla konkretnego akapitu</h3>
+
+					<p>
+						Jeżeli pomimo zmiany koloru artykułów na całej podstronie uznamy, że jeden z nich zasługuje na szczególne wyróżnienie, możemy tego z łatwością dokonać bezpośrednio w znaczniku danego akapitu. Jest to tzw. metoda <span><i>inline</i></span> - definicja stylu danego elementu jest wpisana bezpośrednio w&nbsp;linii znacznika, który ten element tworzy, czy to akapit, nagłówek, pole tekstowe, etc.
+					</p>
+
+					<p>
+						Aby tego dokonać w&nbsp;znaczniku tworzącym dany element, w naszym wypadku akapit, umieszczamy atrybut <span><i>style</i></span> - tak samo, jak to robimy dla dowolnego innego atrybutu określającego znacznik. Następnie interesujące nas cechy danego stylu opisujemy między apostrofami wg składni języka CSS, oddzielając kolejne cechy jedynie spacją.
+					</p>
+
+					<p>
+						Przykład poniżej przedstawia zastosowanie dwóch cech, a&nbsp;więc zmianę koloru tekstu akapitu, a&nbsp;dodatkowo - by zobrazować zasadę opisaną powyżej - również jego pogrubienia.
+					</p>
+
+					<fieldset><i>
+
+						<p style="text-indent: 1em;">
+						&lt;p style="color: yellow; font-weight: bold"&gt;
+						</p>
+
+						<p style="color: yellow; font-weight: bold; text-indent: 2em">
+						W ten oto sposób uzyskaliśmy akapit w kolorze żółtym.
+						</p>
+
+						<p style="text-indent: 1em;">
+						&lt;p&gt;
+						</p>
+
+					</i></fieldset>
+
+					<h2>Jak to wygląda w praktyce</h2>
+
+					<p>
+						Przykład kaskadowego zastosowania stylów możecie zaobserwować na tej stronie. Mianowicie, jeżeli zwróciliście uwagę, zgodnie z opisanymi przykładami dokonano zmiany koloru nagłówkow <span><i>h2</i></span> względem określonego w zewnętrznym arkuszu stylów, domyślnego dla całej witryny.
+					</p>
+
+					<p>
+						W sekcji <span><i>head</i></span> przeglądarka odnajduje odwołanie do pliku <span><i>style.css</i></span>, wg którego domyślnym kolorem nagłówków jest kolor <span><i>aqua</i></span>. Poniżej w sekcji <span><i>head</i></span> za&nbsp;pomocą znacznika <span><i>&lt;style&gt;</i></span> zdefiniowano kolor tychże nagłówków jako jasnozielony. Dzięki czemu zasada ta obowiązuje wyłącznie na tej podstronie. Niestety, w&nbsp;związku z&nbsp;tą zmianą uległ zmianie kolor nagłówka w&nbsp;menu po lewej stronie. Chcąc, by&nbsp;kolor nagłówka menu pozostał jednolity dla całej witryny, musimy uciec się do zastosowania metody <span><i>inline</i></span> i&nbsp;ustawić ten kolor "ręcznie" na domyślny, tj. cyjan (czyli <i><a href="https://www.youtube.com/channel/UCIj6yjWVKPKO5zNLBjQ8Beg" style="font-weight: bold;" title="No odmień &ldquo;być&rdquo;... ;)">po cudzemu</a> <span>aqua</span></i>).
+					</p>
+				
+				</div>
+			
+			</div>
+		
+			<div id="panel">
+			
+				<a href="img/reklama.png"><img src="img/reklama.png" title="Jeszcze zdążysz kupić prezent!" width="170" height="530"/></a>
+				
+			</div>
+			
+		</div>
+		
+		<div id="footer">
+		
+			Strona testowa &copy; Wszelkie prawa zastrzeżone.
+		
+		</div>
+		
+	</div>
+	
+</body>
+
+</html>
